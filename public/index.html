@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ScholarChain | Upload Research Paper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>ScholarChain Research Portal</h1>
+    <p class="subtitle">Securely upload and share your research via IPFS</p>
+    <form id="uploadForm">
+      <input type="text" id="title" placeholder="Enter paper title" required />
+      <input type="file" id="file" accept=".pdf,.docx" required />
+      <button type="submit" id="uploadBtn">Upload Paper</button>
+    </form>
+    <div id="result" class="result-box"></div>
+  </main>
+  <script src="ipfs.js"></script>
+</body>
+</html>
